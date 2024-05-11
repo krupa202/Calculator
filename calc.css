@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    height: 30rem;
+    width: 25rem;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+div{
+    width: 100%;
+}
+.inner{
+    width: 19.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    width: 3.5rem;
+  border-radius: 50%;
+  height: 3.5rem;
+  background: transparent;
+  border: 0px;
+  color: white;
+ box-shadow:  1px 1px 10px 1px rgba(7, 233, 212, 0.71);
+ margin-bottom: 1rem;
+ gap: 1rem;
+ font-size:x-large;
+}
+p{
+    color: rgb(244, 250, 243);
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+#display{
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(73, 129, 135, 0.48);
+    color: black;
+    border: 0px;
+    margin-bottom: 1rem;
+  height: 2.7rem;
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 10px 4px rgba(7, 233, 212, 0.71);
+  padding-left: 1rem;
+  color: wheat;
+}
+.values{
+    text-align: center;
+    display: flex;
+  justify-content: space-between;
+}
+input:hover{
+    background: greenyellow;
+    color: black;
+}
+#display:hover{
+    background: rgba(73, 129, 135, 0.48);
+}
