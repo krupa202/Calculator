@@ -1,4 +1,4 @@
-body{
+/* body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,4 +73,116 @@ input:hover{
 }
 #display:hover{
     background: rgba(73, 129, 135, 0.48);
+} */
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e8f0f2;
+}
+
+/* Main Container */
+.container {
+    height: 30rem;
+    width: 25rem;
+    background: #17252a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Inner Container */
+.inner {
+    width: 19.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* Calculator Buttons */
+input {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: #263f45;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 8px rgba(7, 233, 212, 0.4);
+    margin-bottom: 1rem;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+/* Button Hover */
+input:hover {
+    background: #2ec4b6;
+    color: black;
+}
+
+/* Calculator Heading */
+p {
+    color: white;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Display Screen */
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    height: 3rem;
+    background: #dce8e8;
+    color: black;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 8px rgba(7, 233, 212, 0.4);
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Button Rows */
+.values {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* Display Hover */
+#display:hover {
+    background: #dce8e8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 450px) {
+    .container {
+        width: 95%;
+        max-width: 25rem;
+    }
+
+    .inner {
+        width: 85%;
+    }
+
+    input {
+        width: 3rem;
+        height: 3rem;
+        font-size: large;
+    }
 }
